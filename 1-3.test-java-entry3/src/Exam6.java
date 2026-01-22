@@ -1,18 +1,32 @@
 public class Exam6 {
     public static void main(String[] args) {
-        System.out.println(calc(5, 3, "-"));
+        System.out.println(calc(15, 5, '/'));
     }
 
-    static int calc(int i,int j,String k){
-        if (k="+") {
-            int result = i+j;            
-        }else if(k="-"){
-            int result = i-j;
-        }else if(k="*"){
-            int result = i*k;
+        
+    static int calc(int i,int j,char k){
+        
+        int result;
+        if (k=='+'){
+             result = i+j;  
+            //  return result;          
+        }else if(k=='-'){
+             result = i-j;
+            //  return result;
+        }else if(k=='*'){
+             result = i*j;
+            //  return result;
+        }else if (k=='/'){
+             result = i/j;
+            //  return result;
         }else{
-            int result = -1;
+             result = -1;
+            //  return result;
         }
+
+        // int result = i k j;
+        return result;
+
     }
 
 

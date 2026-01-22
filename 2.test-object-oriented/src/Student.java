@@ -1,9 +1,9 @@
 public class Student {
-    int energy;
+    int energy = 50;
 
-    Student(int energy){
-        this.energy = energy
-    }
+    // Student(int energy){
+    //     this.energy = energy
+    // }
 
     void sleep(){
         energy += 50;
