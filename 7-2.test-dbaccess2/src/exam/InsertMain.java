@@ -16,7 +16,7 @@ public class InsertMain {
 		MemberDao dao = new MemberDao();
 
 		// dto.Member member = dao.load(1);
-		dto.Member member = null;
+		dto.Member member = new dto.Member();
 		member.setName("シロー");
 		member.setAge(54);
 		member.setDep_id(3);
