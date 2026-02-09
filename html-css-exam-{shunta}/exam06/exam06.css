@@ -1,0 +1,19 @@
+ol {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    color: white;
+    margin: 1%;
+}
+
+li.odd {
+    width: 130px;
+    background-color: red;
+}
+
+li.even {
+    width: 130px;
+    background-color: green;
+}

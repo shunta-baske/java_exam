@@ -1,0 +1,35 @@
+div.header{
+    margin: 0;
+    background-color: rgb(194, 194, 194);
+    width: 300px;
+    vertical-align: ;
+}
+div.main{
+    background-color: rgb(75, 106, 133);
+}
+div.footer{
+    margin: 0;
+    background-color: rgb(194, 194, 194);
+}
+/* span.header{
+    width: fit-content;
+    width: 3000px;
+    height: 30px;
+    background-color: rgb(210, 210, 210);
+}
+span.main{
+    width: 100%;
+    background-color: rgb(163, 163, 163);
+}
+span.main#maincontent{
+    width: 100%;
+    background-color: rgb(173, 171, 171);
+}
+span.footer{
+    width: fit-content;
+    width: 3000px;
+    background-color: rgb(210, 210, 210);
+}
+span.main{
+    flex: 0;
+} */
