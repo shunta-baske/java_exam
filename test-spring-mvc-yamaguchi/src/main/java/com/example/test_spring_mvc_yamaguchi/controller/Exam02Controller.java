@@ -17,6 +17,6 @@ public class Exam02Controller {
     @RequestMapping("/show-company-introduction2")
     public String showCompanyIntroduction2(){
 
-        return "exam-2";
+        return "exam-02";
     }
 }

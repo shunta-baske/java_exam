@@ -7,15 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RequestMapping("/exam03")
-public class Exam03Controller {
+public class ReceiveNameController {
 
     @RequestMapping("")
     public String request(){
         return "name-form";
     }
 
-    @RequestMapping("res")
-    public String res(){
+    @RequestMapping("/res")
+    public String res(String name){
+        System.out.println("値は"+name);
         return "finished";
     }
 }
