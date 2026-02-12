@@ -1,0 +1,38 @@
+問１
+INSERT INTO items VALUES (13,1,'鰯',150);
+INSERT INTO items VALUES (14,2,'羊',650);
+
+問２
+UPDATE items SET price = price * 0.9;
+
+問３
+DELETE FROM public.employees
+WHERE id IN
+('7fa0e995-c2c2-498b-acbb-04d05bb0aec5', 'bc3ba6ac-855d-445a-a1ea-0810c6d80d07');
+
+問４
+SELECT name FROM employees
+WHERE start_date =
+(
+SELECT MIN(start_date)
+FROM employees  WHERE end_date IS NULL
+);
+
+問５
+SELECT reg.name,pre.name FROM prefectures AS pre INNER JOIN regions AS reg 
+ON pre.region_code = reg.code
+
+問６
+SELECT SUM(population) FROM populations;
+
+問７
+SELECT pre.name,gend.name,pop.population 
+FROM prefectures AS pre
+INNER JOIN regions AS reg ON pre.region_code = reg.code
+INNER JOIN populations AS pop ON pre.code = pop.prefecture_code
+INNER JOIN genders AS gend ON pop.gender_code = gend.code
+INNER JOIN generations AS gene ON pop.generation_code = gene.code
+WHERE reg.name = '九州'
+ORDER BY pre.name,gend.name ASC;
+
+問８
