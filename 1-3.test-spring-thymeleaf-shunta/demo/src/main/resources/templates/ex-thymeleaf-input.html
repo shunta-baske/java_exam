@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form th:action="@{/ex01/input}">
+        <!-- <input type="text" th:field="*{name}">
+        <input type="number" th:field="*{age}">
+        <input type="text" th:field="*{}"> -->
+        名前：<input type="text" th:name="name"><br>
+        年齢：<input type="number" th:name="age"><br>
+        趣味（3つ）：<br>
+        <input type="text" th:name="hobby1"><br>
+        <input type="text" th:name="hobby2"><br>
+        <input type="text" th:namr="hobby3"><br>
+        <!-- <input type="text" th:namr="hobby4"><br> -->
+        <button>送信</button>
+    </form>
+</body>
+</html>
