@@ -31,7 +31,7 @@ public class Thymleaf_controller {
         model.addAttribute("name",name);
         model.addAttribute("age", age);
         model.addAttribute("list",list);
-        model.addAttribute("hobby3",hobby3);
+        // model.addAttribute("hobby3",hobby3);
         return "ex-thymeleaf-result";
     }
 }
