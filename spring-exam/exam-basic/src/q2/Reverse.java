@@ -20,10 +20,9 @@ public class Reverse {
                System.out.println(reversed);
     }
 
-    public String reverse(String word){
-        
-            
-            return reverse(word);
-        }
-
+    public static String reverse(String word){
+        StringBuilder drow = new StringBuilder(word);
+        drow = drow.reverse();
+        return drow.toString();
+    }
 }
